@@ -19,7 +19,7 @@ const parallaxImg = document.querySelector('.parallax_img')
 if(window.matchMedia('(orientation: landscape) and (min-width:900px)').matches) {
     document.body.onscroll = function() {
         windowPosition = window.pageYOffset;
-        parallaxImg.style.transform = "translateY(" + windowPosition /1.5 + "px)";
+        parallaxImg.style.transform = "translateY(" + windowPosition /2 + "px)";
     }
     
 } else {
