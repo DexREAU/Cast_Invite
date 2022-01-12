@@ -21,11 +21,10 @@ if(window.matchMedia('(orientation: landscape) and (min-width:900px)').matches) 
         windowPosition = window.pageYOffset;
         parallaxImg.style.transform = "translateY(" + windowPosition /2 + "px)";
     }
-    
 } else {
     document.body.onscroll = function() {
         windowPosition = window.pageYOffset;
-        parallaxImg.style.transform = "translateY( -" + windowPosition /2.5 + "px)";
+        parallaxImg.style.transform = "translateY( -" + windowPosition /2 + "px)";
     }
     
 }

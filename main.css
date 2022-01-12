@@ -84,7 +84,7 @@ img {
 }
 
 
-.mobile_hidden, .doggo01.mobile_hidden {
+.mobile_hidden {
     display:none;
 }
 
@@ -138,7 +138,6 @@ header {
     display: block;
     text-align: center;
     margin: 0 0 6rem 0;
-    max-width: 23rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +166,7 @@ h1, h3 {
 } .parallax_img {
     background-color: var(--c1);
     z-index: 2;
-    margin-bottom: -23rem;
+    margin-bottom: -35rem;
 }
 
 
@@ -178,15 +177,15 @@ h1, h3 {
     background-attachment: fixed;
     display: inline-block;
     width: 100%;
-    padding: 6rem 0 3rem 0;
+    padding: 16rem 0 3rem 0;
 } .section2 h2 {
     color: var(--c4-a);
-    font-size: clamp(1.8rem, 9vw, 3rem);
-    line-height: normal;
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    line-height: clamp(2.4rem, 12vw, 3.4rem);
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 500;
     margin: 0 auto;
-    width: clamp(15rem, 80vw, 26rem);
+    width: clamp(15rem, 70vw, 26rem);
 } .section2 h2 > span {
     font-size: 1.2em;
     color: var(--c1);
@@ -241,31 +240,29 @@ h1, h3 {
 
 
 .pre_form_text {
-    width: clamp(16rem, 80vw, 40rem);
+    width: clamp(16rem, 80vw, 75rem);
     margin: 0 auto;
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 0 1rem 0;
 }
 
 .p1 {
     text-align: center;
-    font-size: clamp(1rem, 4.8vw, 1.4rem);
-    margin: 1rem 0;
-    font-weight: 500;
+    font-size: clamp(1rem, 4.8vw, 1.3rem);
+    margin: 2rem 0;
+    font-weight: 100;
 } ul.p1 {
     color:var(--c4);
     padding: 0;
     list-style: none;
 } ul.p1 li {
-    margin: 0.8rem 0;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 6vw;
     border-radius: 0.2rem;
-    border: 1px solid rgb(202 216 131 / 20%);
 }
 
 
 .logo_final {
     display: block;
-    margin: 10vw auto calc(3rem + 4vw) auto;
+    margin: 5vw auto calc(3rem + 4vw) auto;
     width: clamp(15rem, 75vw, 38rem);
 }
 
@@ -326,7 +323,6 @@ form {
 }
 
 .section3 {
-    padding-top: 6rem;
     background-color: var(--c1);
 }
 
@@ -372,9 +368,9 @@ form {
 
 
     
-    .desktop_hidden, .desktop_hidden.doggo01 {
+    .desktop_hidden {
         display:none;
-    } .mobile_hidden, .doggo01.mobile_hidden {
+    } .mobile_hidden {
         display:initial;
     }
 
@@ -407,6 +403,7 @@ form {
 
     .intro_text a {
         margin:0;
+        max-width: 20rem;
     }
 
     .parallax_img {
@@ -461,11 +458,18 @@ form {
         transform: translateZ(0);
     } .section2 h2 {
         font-weight: 500;
-        line-height: clamp(1.8rem, 5vw, 3.5rem);
+        line-height: clamp(2.6rem, 4.5vw, 3.5rem);
         width: unset;
-        font-size: clamp(2.4rem, 4vw, 3rem);
+        font-size: clamp(2rem, 3vw, 2.5rem);
+    } .section2 h2 > span {
+        font-size: 1.3em;
+    } .section2 h2 span span {
+        font-size: 2.2em;
     } .diamond {
-        margin: 0 auto 2rem auto;
+        margin: 0 0 2rem 0;
+    } .section2 p {
+        width: clamp(15rem, 30vw, 26rem);
+        line-height: clamp(1.6rem, 4vw, 2.4rem);
     }
     
     .bullets {
@@ -483,13 +487,13 @@ form {
     }
 
     .section3 {
-        padding-top: 8rem;
+        padding-top: 4rem;
     }
 
     ul.p1 li {
         border: none;
         padding: 0;
-        margin: 0.6rem 0;
+        margin: 0.1rem 0;
         text-shadow: 0 0 0.7rem rgb(122 131 75);
     } .p1 {
         line-height: 2rem;
